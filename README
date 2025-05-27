@@ -1,0 +1,69 @@
+# 📦 CRUD de Usuarios - Node.js + Express
+
+Este proyecto implementa una API REST en Node.js usando Express, que permite realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) sobre una lista de usuarios en memoria.
+
+---
+
+## 📌 Tecnologías utilizadas
+
+- Node.js
+- Express
+
+---
+
+## 🚀 Cómo ejecutar
+
+1. Clonar el repositorio o copiar los archivos.
+2. Instalar dependencias:
+
+```bash
+npm install
+Ejecutar el servidor:
+
+bash
+Copiar
+Editar
+npm run dev
+El servidor estará disponible en http://localhost:3000
+
+🔗 Endpoints
+GET /usuarios
+Devuelve la lista completa de usuarios.
+
+GET /usuarios/:id
+Devuelve un usuario por ID.
+Si no existe, retorna un error 404.
+
+POST /usuarios
+Crea un nuevo usuario.
+Requiere los campos: nombre, email, edad.
+Asigna un ID único automáticamente.
+
+PUT /usuarios/:id
+Actualiza un usuario existente.
+Valida que el usuario exista.
+
+DELETE /usuarios/:id
+Elimina un usuario por ID.
+
+🧪 Extras implementados
+Validación: nombre, email y edad son obligatorios.
+
+El email no puede estar repetido ni vacío.
+
+Mensajes de error claros.
+
+📂 Estructura básica del proyecto
+pgsql
+Copiar
+Editar
+crud-usuarios/
+├── index.js
+├── usuarios.js
+├── package.json
+👨‍🏫 Autor
+Nombre: Agustin Fasano
+
+Comisión: A
+
+Año: 2025
